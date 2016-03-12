@@ -230,8 +230,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/03/12/2016-3-12/" itemprop="url">
-                  Android安装环境配置
+                <a class="post-title-link" href="/2016/03/13/2016-3-12/" itemprop="url">
+                  未命名
                 </a>
               
             
@@ -241,34 +241,19 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-03-12T23:55:55+08:00" content="2016-03-12">
-              2016-03-12
+            <time itemprop="dateCreated" datetime="2016-03-13T01:14:59+08:00" content="2016-03-13">
+              2016-03-13
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/学习/" itemprop="url" rel="index">
-                    <span itemprop="name">学习</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/12/2016-3-12/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/12/2016-3-12/" itemprop="commentsCount"></span>
+                <a href="/2016/03/13/2016-3-12/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/13/2016-3-12/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -288,12 +273,27 @@
 
       
         
-          <span itemprop="description">基于jdk1.7+eclipse+adt+sdk进行搭建android开发环境的过程</span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/12/2016-3-12/">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          <span itemprop="articleBody">
+            
+              <p>title: Android安装环境配置<br>date: 2016-3-12 23:55:55<br>categories: 学习<br>description: 基于jdk1.7+eclipse+adt+sdk进行搭建android开发环境的过程</p>
+<h3 id="jdk_u5B89_u88C5"><a href="#jdk_u5B89_u88C5" class="headerlink" title="jdk安装"></a>jdk安装</h3><ul>
+<li>略.<h3 id="Myeclipse_u5B89_u88C5_u53CA_u7834_u89E3"><a href="#Myeclipse_u5B89_u88C5_u53CA_u7834_u89E3" class="headerlink" title="Myeclipse安装及破解"></a>Myeclipse安装及破解</h3></li>
+<li>略.<h3 id="ADT_u5B89_u88C5"><a href="#ADT_u5B89_u88C5" class="headerlink" title="ADT安装"></a>ADT安装</h3></li>
+<li>ADT是myeclipse中进行android开发而制作的插件，安装ADT后就可以对sdk等进行在线更新</li>
+<li><a href="http://tools.android-studio.org/index.php/adt-bundle-plugin" target="_blank" rel="external">ADT下载地址</a></li>
+<li><a href="http://jingyan.baidu.com/article/19020a0a0c1579529d284235.html" target="_blank" rel="external">ADT配置方法</a> 实际安装时会有出入， 选择install from site即可，然后选择本地rar格式的adt下载包即可，最好安装tools里所有的插件.<h3 id="SDK_u5B89_u88C5"><a href="#SDK_u5B89_u88C5" class="headerlink" title="SDK安装"></a>SDK安装</h3></li>
+<li><a href="http://tools.android-studio.org/index.php/sdk" target="_blank" rel="external">sdk工具下载地址</a>. 这里需要注意系统的64位还是32位的，而且安装包里面avd和sdk均会包含。</li>
+<li><a href="http://www.cnblogs.com/VincentHome/archive/2012/08/30/2664484.html" target="_blank" rel="external">sdk下载教程</a> 这是默认安装方法，如果下载 特别慢，有时候我们需要镜像网址</li>
+<li><a href="http://blog.csdn.net/boonya/article/details/38752647" target="_blank" rel="external">镜像安装sdk</a> 可以尝试不同的镜像网站，我下载使用中科院的镜像最快，可以达到300kB/s.</li>
+<li><a href="http://www.nowamagic.net/academy/detail/50280277%E3%80%82" target="_blank" rel="external">下载内容不见的解决方法</a> 一个镜像地址不显示，换一个就可以显示了</li>
+<li><a href="http://jingyan.baidu.com/article/36d6ed1f5fd2e71bcf488398.html" target="_blank" rel="external">sdk manager图标不见了的解决方法</a></li>
+<li><a href="http://www.shoutmon.com/how-to-solve-cpuabi-no-system-images-installed-for-this-target.html" target="_blank" rel="external">模拟器无法配置的问题1及解决方法</a> 就是sdk没下载完整，再把那几个没有下载的下载就可以了。</li>
+<li><a href="http://zhidao.baidu.com/link?url=ll1d5wGbZkANSBNkjTJV3KHtV49HUJTdmoUvZtaJ77X6_2TcNbFUEFE0GSlE5uIWYNLoPoj5XpyHILPvE15g9a" target="_blank" rel="external">第一次建工程后无法加载模拟器的解决方法</a> 注:Myeclipse 里面不是project…而是run-configuration.原因很简单，是因为建工程在见模拟器之前导致模拟器无法加载上，在Run-configuration 里面删除掉new的那一个后，新建立的工程就能加载模拟器了。<h3 id="u5582_7E"><a href="#u5582_7E" class="headerlink" title="喂~"></a>喂~</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">"hello,2016"</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+            
+          </span>
         
       
     </div>
