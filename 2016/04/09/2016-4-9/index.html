@@ -57,7 +57,7 @@
 <meta property="og:url" content="http://liuxuanhua.cn/2016/04/09/2016-4-9/index.html">
 <meta property="og:site_name" content="L">
 <meta property="og:description" content="android系统的基本结构，开发环境的介绍，以及四大组件的基本知识。">
-<meta property="og:updated_time" content="2016-04-09T13:19:10.013Z">
+<meta property="og:updated_time" content="2016-04-09T13:21:46.900Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android开发的基础知识总结1">
 <meta name="twitter:description" content="android系统的基本结构，开发环境的介绍，以及四大组件的基本知识。">
@@ -322,7 +322,7 @@
 <h2 id="u5F00_u53D1_u73AF_u5883_u4ECB_u7ECD"><a href="#u5F00_u53D1_u73AF_u5883_u4ECB_u7ECD" class="headerlink" title="开发环境介绍"></a>开发环境介绍</h2><blockquote>
 <p>主要是介绍android开发时，各类资源所存放的位置，以及一些技巧。</p>
 </blockquote>
-<h3 id="u5F00_u53D1_u73AF_u5883_u4E2D_u7684_u6587_u4EF6_u5939"><a href="#u5F00_u53D1_u73AF_u5883_u4E2D_u7684_u6587_u4EF6_u5939" class="headerlink" title="开发环境中的文件夹"></a>开发环境中的文件夹</h3><ul>
+<h4 id="u5F00_u53D1_u73AF_u5883_u4E2D_u7684_u6587_u4EF6_u5939"><a href="#u5F00_u53D1_u73AF_u5883_u4E2D_u7684_u6587_u4EF6_u5939" class="headerlink" title="开发环境中的文件夹"></a>开发环境中的文件夹</h4><ul>
 <li>src:存放java代码的地方。</li>
 <li>gen:内容是自动生成的，开发者不要修改，主要包含R.java，即Id生成处。每个具体的资源(图片/布局文件/字符串等)均对应于R内定义的一个id.</li>
 <li>assests: 存放一些随程序打包的文件。程序可以动态读取这些内容。使用WebView加载的网页相关文件也在此文件夹。</li>
@@ -332,19 +332,19 @@
 <li>AndroidManifest.xml:整个android文件的配置文件，activity/service/brocastReceiver/ContentProvider均需要在这里面注册后才能使用，一些权限声明(访问网络/相机/SDcard读写等权限)也需要写在这里。在这里还可以指定程序最低兼容版本和目标版本</li>
 <li>project.properties. 指定编译程序所使用的SDK版本。</li>
 </ul>
-<h3 id="u5F00_u53D1_u73AF_u5883_u5E38_u7528_u7684_u547D_u4EE4"><a href="#u5F00_u53D1_u73AF_u5883_u5E38_u7528_u7684_u547D_u4EE4" class="headerlink" title="开发环境常用的命令"></a>开发环境常用的命令</h3><ul>
+<h4 id="u5F00_u53D1_u73AF_u5883_u5E38_u7528_u7684_u547D_u4EE4"><a href="#u5F00_u53D1_u73AF_u5883_u5E38_u7528_u7684_u547D_u4EE4" class="headerlink" title="开发环境常用的命令"></a>开发环境常用的命令</h4><ul>
 <li>clean:清除项目生成的内容，这个常用，有时候一些xml错误在clean后就能清除。</li>
 <li>debug:打包一个调试用的android程序的apk包。</li>
 <li>release:打包一个发布用的android程序的apk包。</li>
 </ul>
-<h3 id="u8C03_u8BD5_u5DE5_u5177"><a href="#u8C03_u8BD5_u5DE5_u5177" class="headerlink" title="调试工具"></a>调试工具</h3><ul>
+<h4 id="u8C03_u8BD5_u5DE5_u5177"><a href="#u8C03_u8BD5_u5DE5_u5177" class="headerlink" title="调试工具"></a>调试工具</h4><ul>
 <li>可以在在debug as模式下进行调试，并设置端点，观察各种数据的实时状态。</li>
 <li>LogCat工具，能够显示android运行中预添加的log类信息。 添加方法：Window–Show View— Other–logCat.</li>
 </ul>
 <h2 id="u56DB_u5927_u7EC4_u4EF6_u4ECB_u7ECD"><a href="#u56DB_u5927_u7EC4_u4EF6_u4ECB_u7ECD" class="headerlink" title="四大组件介绍"></a>四大组件介绍</h2><blockquote>
 <p>主要是介绍android系统中，我们常用到的组件，并简略涉及其功能使用技巧。</p>
 </blockquote>
-<h3 id="u57FA_u672C_u7EC4_u4EF6"><a href="#u57FA_u672C_u7EC4_u4EF6" class="headerlink" title="基本组件"></a>基本组件</h3><h4 id="Activity_u548CView"><a href="#Activity_u548CView" class="headerlink" title="Activity和View"></a>Activity和View</h4><p>负责与用户交互，Activity是功能上的交互，像一个功能容器，继承于Activity基类。View则用来进行布局，是Ui控件的基类。Activity+View有点像C#中的对话框，但对话框的功能和布局是集中到一起的。setContentView()可以将activity和view绑定。</p>
+<h4 id="Activity_u548CView"><a href="#Activity_u548CView" class="headerlink" title="Activity和View"></a>Activity和View</h4><p>负责与用户交互，Activity是功能上的交互，像一个功能容器，继承于Activity基类。View则用来进行布局，是Ui控件的基类。Activity+View有点像C#中的对话框，但对话框的功能和布局是集中到一起的。setContentView()可以将activity和view绑定。</p>
 <h4 id="Service"><a href="#Service" class="headerlink" title="Service"></a>Service</h4><p>也是功能容器，但运行在后台，继承于Service类，其多用来为其他组件提供后台服务或监控其他组件的运行状态。</p>
 <h4 id="Broadcast_Receiver"><a href="#Broadcast_Receiver" class="headerlink" title="Broadcast Receiver"></a>Broadcast Receiver</h4><p>监听android应用中其他组件的消息。开发者通过继承BroadcastReceiver类，重写OnReceive方法即可。其他组件通过SendBroadCast()、SendStickybroadcast()或sendOrderedBroadcast()来发送消息时，可以通过BroadcastReceiver来接收，OnReceiver()会被触发，完成消息传递。<br>使用时需要对receiver进行注册，可通过代码，也可以通过在AndroidManifest.xml配置。</p>
 <h4 id="Content_Provider"><a href="#Content_Provider" class="headerlink" title="Content Provider"></a>Content Provider</h4><p>应用之间的消息传递，比如两个app之间需要交换数据，就可以通过ContentProvider进行交换。有以下交换方法：</p>
@@ -499,7 +499,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#android_u7CFB_u7EDF_u7531_u4E0B_u800C_u4E0A_u7684_u7ED3_u6784"><span class="nav-number">1.</span> <span class="nav-text">android系统由下而上的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u5185_u6838_u5C42_uFF1A"><span class="nav-number">1.0.1.</span> <span class="nav-text">内核层：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5E93_u652F_u6301_u5C42"><span class="nav-number">1.0.2.</span> <span class="nav-text">库支持层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5E94_u7528_u6846_u67B6_u5C42"><span class="nav-number">1.0.3.</span> <span class="nav-text">应用框架层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5E94_u7528_u7A0B_u5E8F_u5C42"><span class="nav-number">1.0.4.</span> <span class="nav-text">应用程序层</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5F00_u53D1_u73AF_u5883_u4ECB_u7ECD"><span class="nav-number">2.</span> <span class="nav-text">开发环境介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5F00_u53D1_u73AF_u5883_u4E2D_u7684_u6587_u4EF6_u5939"><span class="nav-number">2.1.</span> <span class="nav-text">开发环境中的文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5F00_u53D1_u73AF_u5883_u5E38_u7528_u7684_u547D_u4EE4"><span class="nav-number">2.2.</span> <span class="nav-text">开发环境常用的命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8C03_u8BD5_u5DE5_u5177"><span class="nav-number">2.3.</span> <span class="nav-text">调试工具</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u56DB_u5927_u7EC4_u4EF6_u4ECB_u7ECD"><span class="nav-number">3.</span> <span class="nav-text">四大组件介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u57FA_u672C_u7EC4_u4EF6"><span class="nav-number">3.1.</span> <span class="nav-text">基本组件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Activity_u548CView"><span class="nav-number">3.1.1.</span> <span class="nav-text">Activity和View</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Service"><span class="nav-number">3.1.2.</span> <span class="nav-text">Service</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Broadcast_Receiver"><span class="nav-number">3.1.3.</span> <span class="nav-text">Broadcast Receiver</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Content_Provider"><span class="nav-number">3.1.4.</span> <span class="nav-text">Content Provider</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#android_u7CFB_u7EDF_u7531_u4E0B_u800C_u4E0A_u7684_u7ED3_u6784"><span class="nav-number">1.</span> <span class="nav-text">android系统由下而上的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u5185_u6838_u5C42_uFF1A"><span class="nav-number">1.0.1.</span> <span class="nav-text">内核层：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5E93_u652F_u6301_u5C42"><span class="nav-number">1.0.2.</span> <span class="nav-text">库支持层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5E94_u7528_u6846_u67B6_u5C42"><span class="nav-number">1.0.3.</span> <span class="nav-text">应用框架层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5E94_u7528_u7A0B_u5E8F_u5C42"><span class="nav-number">1.0.4.</span> <span class="nav-text">应用程序层</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5F00_u53D1_u73AF_u5883_u4ECB_u7ECD"><span class="nav-number">2.</span> <span class="nav-text">开发环境介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u5F00_u53D1_u73AF_u5883_u4E2D_u7684_u6587_u4EF6_u5939"><span class="nav-number">2.0.1.</span> <span class="nav-text">开发环境中的文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5F00_u53D1_u73AF_u5883_u5E38_u7528_u7684_u547D_u4EE4"><span class="nav-number">2.0.2.</span> <span class="nav-text">开发环境常用的命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u8C03_u8BD5_u5DE5_u5177"><span class="nav-number">2.0.3.</span> <span class="nav-text">调试工具</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u56DB_u5927_u7EC4_u4EF6_u4ECB_u7ECD"><span class="nav-number">3.</span> <span class="nav-text">四大组件介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Activity_u548CView"><span class="nav-number">3.0.1.</span> <span class="nav-text">Activity和View</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Service"><span class="nav-number">3.0.2.</span> <span class="nav-text">Service</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Broadcast_Receiver"><span class="nav-number">3.0.3.</span> <span class="nav-text">Broadcast Receiver</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Content_Provider"><span class="nav-number">3.0.4.</span> <span class="nav-text">Content Provider</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
