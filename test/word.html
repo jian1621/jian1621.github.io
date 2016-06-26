@@ -1,3 +1,7 @@
+layout: false
+title: "测试右栏"
+date: 2000-06-26 20:03:48
+---
 <html>
 <head>
 <title>html标签介绍
@@ -6,21 +10,21 @@
 <body bgcolor="#f9f9f9">
 <h1 id="title" align="center">html标签使用案例上</h1>
 <h3>标签介绍</h3>
-<p>html是文档开始和结束的标签、<br>head是浏览器顶端的名称<br>body是浏览器正文的内容<br>h1 h2 ... h6 是1~6级标题<hr></p>
+<p>html是文档开始和结束的标签、<br/>head是浏览器顶端的名称<br/>body是浏览器正文的内容<br/>h1 h2 ... h6 是1~6级标题<hr/></p>
 <h3>文本标签</h3>
-<p><b>粗体</b>标签是b<br><i>斜体</i>标签是i<br> 上标3<sup>3</sup>是sup.下标2<sub>2</sub>是sub<hr></p>
+<p><b>粗体</b>标签是b<br/><i>斜体</i>标签是i<br/> 上标3<sup>3</sup>是sup.下标2<sub>2</sub>是sub<hr/></p>
 <p><font size="5">字体使用font标签size属性</font></p>
 <p><font face="courier">字体风格使用face属性</font></p>
 <h3>语义化标记</h3>
-<p>是为了能够实现一些智能标记<br><strong>重点使用strong标记</strong><br><em>强调使用em标记</em></p>
+<p>是为了能够实现一些智能标记<br/><strong>重点使用strong标记</strong><br/><em>强调使用em标记</em></p>
 <blockquote><p>这是一段很长的引用，使用blockquote</p></blockquote>
 <p>这是一段<q>短引用，使用q</q></p>
 <p><abbr title="摩擦摩擦摩擦">mc</abbr>缩写词的使用方法是abbr,这种用法来自<cite>HTML&CSS设计与构建网站</cite></p>
-<p><dfn>定义新术语</dfn>使用dfn	</p><p>
+<p><dfn>定义新术语</dfn>使用dfn	<p>
 <address>
-<p>地址标签使用address.<br>济南市市中区<br><a href="mailto:3044338679@qq.com" target="_blank" rel="external">作者邮箱</a></p>
+<p>地址标签使用address.<br/>济南市市中区<br/><a href="mailto:3044338679@qq.com">作者邮箱</a></p>
 </address>
-</p><p><ins>插入语句使用ins<br></ins><del>删除语句使用del<br></del><s>不相干但又不至于删除的语句使用s</s><hr></p>
+<p><ins>插入语句使用ins<br/></ins><del>删除语句使用del<br/></del><s>不相干但又不至于删除的语句使用s</s><hr/></p>
 <p style="color:red">时间:2016年6月8日16：42记</p>
 <h3>排序列表</h3>
 <p>有序列表使用ol代表有序，使用li代表每一个序列号下面的列表，会自动换行，和段落很像.</p>
@@ -32,20 +36,20 @@
 <li>第2行<ul><li>第一行</li><li>第2行</li><li>第3行</li></ul></li>
 <li>第3行<ul><li>第一行</li><li>第2行</li><li>第3行</li></ul></li></ol>
 <p>定义列表使用dl来表示，使用dt代表定义的标题，使用dl代表定义的内容
-<dl><dt>夏天</dt><dl>夏天，英文为summer</dl></dl><hr>
-</p><h3>链接标签</h3>
+<dl><dt>夏天</dt><dl>夏天，英文为summer</dl></dl><hr/>
+<h3>链接标签</h3>
 <p><a href="http://www.liuxuanhua.cn" target="_blank">这是一个普通的链接,在新的标签页中打开</a>  链接使用a表示，其属性href=“网址”可以使用绝对路径，也可以使用相对路径,其target属性等于—blank时为新打开一个页来显示，否则就替换掉当前的页面，如下面的页面</p>
-<p><a href="http://www.liuxuanhua.cn" target="_blank" rel="external">这是一个普通的链接，在当前页面中打开</a>
-</p><p>图片链接可以使用a标签+image标签的方式,a标签是链接的网址，img标签内是图片地址，img标签被包含在a标签内</p>
+<p><a href="http://www.liuxuanhua.cn" >这是一个普通的链接，在当前页面中打开</a>
+<p>图片链接可以使用a标签+image标签的方式,a标签是链接的网址，img标签内是图片地址，img标签被包含在a标签内</p>
 <a href="#title"><img src="images/html/up.png" width="40" height="40" alt="回到首页"></a>	
 <h6>相对路径</h6>
 <p>如果是同一个文件夹，则可以直接用其名称；如果是子文件夹则用正常引用路径；如果上一层文件夹则../；如果上上层则../../</p>
 <p>链接不仅可以链接到地址，还可以链接到本页内容的某个标签，但其需要加入id,引用格式为#加id名称</p>
-<a href="#title">回到本页最顶端</a>	<hr>
+<a href="#title">回到本页最顶端</a>	<hr/>
 <h3>标签属性</h3>
 <p>可以设置标签属性来扩展html的功能，比如本页面中的body的bgcolor="#f9f9f9"；即将背景色设为#f9f9f9</p>
 <p>alian属性可以设置位置，标题即为居中格式</p>
-<hr>
+<hr/>
 <h3>特殊字符</h3>
 <p>某些字符已经被当作html标签或其他功能，如果想显示这些字符，则需要使用html规定的字符，比如小于号&lt就需要使用&加上lt表示</p>
 <p>空格&nbsp是&+nbsp;或者&+#160</p>
@@ -54,10 +58,10 @@
 <p>&quot是&+quot</p>
 <p>&copy版权是&+copy</p>
 <p>&reg注册时&+reg</p>
-<hr>
+<hr/>
 <h3>表格的使用</h3>
 <p>使用table标签来建立表格，行使用tr,单元格使用td,下面即为一个3行3列的表格,单元格格式可以包含其他格式的标签比如颜色，样式等</p>
-<table style="color:red;" border="1">
+<table style="color:red;"border="1">
 <caption>表格使用</caption>
 <tr>
 <th>第1列</th>
@@ -75,29 +79,29 @@
 <td>&nbsp</td>
 </tr>		
 </table>
-<hr>
+<hr/>
 <h3>frame框架的使用</h3>
 <p>如果直接调用frame标签，则不能显示在body中，body中调用iframe标签，而frame使用在body之外，如main页面的使用</p>
 <iframe width="100%" src="word_color.html"></iframe>
-<hr>
+<hr/>
 <h3>表单及一些控件</h3>
 <p>单选按钮使用radio,复选框使用checkbox,输入使用text,下拉使用select，提交使用submit，</p>
 <p>通过提交可以将表单里的信息提交给action所指向的文件,并在method中有两种提交数据的方式，即为get和post</p>
-<form action="word.html" method="post">
-<input type="radio" name="sex" value="male">男<input type="radio" name="sex" value="female">女<br>
-<input type="checkbox" name="skills" value="fly">会跑
-<input type="checkbox" name="skills" value="run">会跳
-<i<input type="checkbox" name="skills" value="jump">会走
-<input type="checkbox" name="skills" value="walk" checked>会躺
-<input type="text" name="property" value="张三">姓名<br>
-<select name="province">
+<form action=word.html method="post">
+<input type="radio" name="sex"value="male" >男<input type="radio" name="sex"value="female">女<br/>
+<input type="checkbox" name=skills value="fly">会跑
+<input type="checkbox" name=skills value="run">会跳
+<i<input type="checkbox" name=skills value="jump">会走
+<input type="checkbox" name=skills value="walk" checked>会躺
+<input type="text" name=property value="张三">姓名<br/>
+<select name="province" >
 <option value="shandong">山东
-</option><option value="henan">河南
-</option><option value="hebei">河北
-</option></select>
+<option value="henan">河南
+<option value="hebei">河北
+</select>
 <input type="submit" value="提交">
-</i<input></form>
-<hr>
+</form>
+<hr/>
 <p></p>
 <p></p>
 </body>
