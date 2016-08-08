@@ -51,17 +51,16 @@
 
 
 
-<meta name="description" content="主要介绍activity的基础知识。">
+<meta name="description" content="介绍了android开发中所常引用的网络库和图片缓存库">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android开发的基础知识总结2">
-<meta property="og:url" content="http://liuxuanhua.cn/2016/04/25/2016-4-16/index.html">
+<meta property="og:title" content="android的开源库（一）">
+<meta property="og:url" content="http://liuxuanhua.cn/2016/08/08/2016-8-8 /index.html">
 <meta property="og:site_name" content="L">
-<meta property="og:description" content="主要介绍activity的基础知识。">
-<meta property="og:image" content="http://ww2.sinaimg.cn/mw690/006lPiqbjw1f38w1sk7onj30f50jr40c.jpg">
-<meta property="og:updated_time" content="2016-04-25T11:43:12.844Z">
+<meta property="og:description" content="介绍了android开发中所常引用的网络库和图片缓存库">
+<meta property="og:updated_time" content="2016-08-08T12:22:57.601Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android开发的基础知识总结2">
-<meta name="twitter:description" content="主要介绍activity的基础知识。">
+<meta name="twitter:title" content="android的开源库（一）">
+<meta name="twitter:description" content="介绍了android开发中所常引用的网络库和图片缓存库">
 
 
 
@@ -73,7 +72,7 @@
   };
 </script>
 
-  <title> Android开发的基础知识总结2 | L </title>
+  <title> android的开源库（一） | L </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -223,7 +222,7 @@
             
             
               
-                Android开发的基础知识总结2
+                android的开源库（一）
               
             
           </h1>
@@ -232,8 +231,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-04-25T20:46:50+08:00" content="2016-04-25">
-              2016-04-25
+            <time itemprop="dateCreated" datetime="2016-08-08T19:58:50+08:00" content="2016-08-08">
+              2016-08-08
             </time>
           </span>
 
@@ -258,8 +257,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/04/25/2016-4-16/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/25/2016-4-16/" itemprop="commentsCount"></span>
+                <a href="/2016/08/08/2016-8-8 /#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/08/2016-8-8 /" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -278,57 +277,20 @@
       
 
       
-        <span itemprop="articleBody"><blockquote>
-<p>参考文章:</p>
-<ul>
-<li>郭神–第一行代码</li>
-<li><a href="http://www.cnblogs.com/lwbqqyumidi/p/3769113.html" target="_blank" rel="external">Activity的生命周期–cornblog</a> </li>
-<li><a href="http://www.cnblogs.com/kofi1122/archive/2011/04/10/2011772.html" target="_blank" rel="external">Activity生命周期之我见–kofi1122</a> </li>
-<li><a href="http://blog.csdn.net/android_tutor/article/details/5772285" target="_blank" rel="external">两分钟彻底让你明白Android Activity生命周期(图文)–Android_Tutor</a> </li>
-<li><a href="http://blog.csdn.net/liuhe688/article/details/6733407" target="_blank" rel="external">总结篇之activity–scott</a></li>
-</ul>
+        <span itemprop="articleBody"><h3 id="u7F51_u7EDC_u901A_u4FE1_u534F_u8BAE_uFF1A"><a href="#u7F51_u7EDC_u901A_u4FE1_u534F_u8BAE_uFF1A" class="headerlink" title="网络通信协议："></a>网络通信协议：</h3><h4 id="android-async-http_u6846_u67B6"><a href="#android-async-http_u6846_u67B6" class="headerlink" title="android-async-http框架"></a>android-async-http框架</h4><p><a href="https://github.com/loopj/android-async-http" target="_blank" rel="external">Github地址</a><br><a href="http://www.cnblogs.com/clear5/p/4564072.html" target="_blank" rel="external">示例1</a><br><a href="http://www.cnblogs.com/clear5/p/4568421.html" target="_blank" rel="external">示例2</a><br>优劣：android-async-http内部实现是基于HttpClient, 想必你肯定知道6.0之后HttpClient是不是系统自带的了，不过它在最近的更新中将HttpClient的所有代码copy了一份进来，所以还能使用。</p>
+<h4 id="Volley"><a href="#Volley" class="headerlink" title="Volley"></a>Volley</h4><p><a href="https://github.com/wangzhengyi/Volley" target="_blank" rel="external">源码解析</a><br><a href="http://www.cnblogs.com/caichongyang/p/4399790.html" target="_blank" rel="external">详解1</a><br><a href="http://blog.csdn.net/ttdevs/article/details/17566795" target="_blank" rel="external">详解2</a><br><a href="http://blog.csdn.net/column/details/xyzlmnnetdev.html" target="_blank" rel="external">详解3</a><br>优劣：Volley是官方出的，volley在设计的时候是将具体的请求客户端做了下封装：HurlStack，也就是说可以支持HttpUrlConnection, HttpClient, OkHttp，相当于模版模式吧，这样解耦还是非常方便的，可以随意切换，如果你之前使用过Volley，并习惯使用，那直接写个OkHttp扩展就行了。<br><strong>推荐使用</strong></p>
+<h4 id="OkHttp"><a href="#OkHttp" class="headerlink" title="OkHttp"></a>OkHttp</h4><p><a href="https://github.com/square/okhttp" target="_blank" rel="external">Github地址</a><br><a href="http://www.jianshu.com/p/19593f254cd9" target="_blank" rel="external">详解1</a><br><a href="http://www.cnblogs.com/qifengshi/p/5405550.html" target="_blank" rel="external">详解2</a><br><a href="http://www.cnblogs.com/whoislcj/p/5526431.html" target="_blank" rel="external">详解3</a><br>优劣：OkHttp 是基于http协议封装的一套请求客户端，虽然它也可以开线程，但根本上它更偏向真正的请求，跟HttpClient, HttpUrlConnection的职责是一样的。</p>
+<h4 id="retrofit"><a href="#retrofit" class="headerlink" title="retrofit"></a>retrofit</h4><p><a href="http://square.github.io/retrofit/" target="_blank" rel="external">Github</a><br><a href="http://www.tuicool.com/articles/NnuIva" target="_blank" rel="external">详解1</a><br><a href="http://www.cnblogs.com/vir56k/p/5633001.html" target="_blank" rel="external">示例1</a><br><a href="https://futurestud.io/blog/android-basic-authentication-with-retrofit" target="_blank" rel="external">英文版</a><br><strong>推荐使用</strong></p>
+<h4 id="Robospice"><a href="#Robospice" class="headerlink" title="Robospice"></a>Robospice</h4><p><a href="http://blog.csdn.net/sbsujjbcy/article/details/45070711" target="_blank" rel="external">介绍文章</a><br><strong>未深入研究</strong></p>
+<blockquote>
+<p>除了以上的各种网络协议库，android本身提供httpurlconnection和httpclient.在哈密扶贫的android版中就是使用最基本的httpurlconnection来和服务器端的selvert进行通信的，其优点是自由度高，哪儿出问题能定位到哪儿，缺点就是代码冗余，稳健性不高，需要考虑各种情况。<br><a href="http://www.2cto.com/kf/201409/338915.html" target="_blank" rel="external">示例</a><br>优劣：简单，但坑较多，需要手动异步，手动设置handler.<br><a href="http://www.tuicool.com/articles/Yjq6niQ" target="_blank" rel="external">不同的网络库的比较</a></p>
+<h3 id="u56FE_u7247_u7F13_u5B58_u5E93"><a href="#u56FE_u7247_u7F13_u5B58_u5E93" class="headerlink" title="图片缓存库"></a>图片缓存库</h3><p>图片加载最重要的就是不能oom,即内存溢出，如何在加载图片的时候可以加载到1000张，10000张而不崩溃，这是一个图片加载技术使用的门槛。有示例（未校验，作参考使用）：<a href="http://www.cnblogs.com/keanuyaoo/p/3290080.html" target="_blank" rel="external">http://www.cnblogs.com/keanuyaoo/p/3290080.html</a></p>
+<h4 id="Picasso_3A__u53EF_u4EE5_u5B9E_u73B0_u56FE_u7247_u4E0B_u8F7D_u548C_u7F13_u5B58_u529F_u80FD_u3002"><a href="#Picasso_3A__u53EF_u4EE5_u5B9E_u73B0_u56FE_u7247_u4E0B_u8F7D_u548C_u7F13_u5B58_u529F_u80FD_u3002" class="headerlink" title="Picasso: 可以实现图片下载和缓存功能。"></a>Picasso: 可以实现图片下载和缓存功能。</h4><p><a href="https://github.com/square/picasso" target="_blank" rel="external">github</a><br>特点：<br>    自动完成Android APP的图片加载<br>    处理图片回收以及取消下载操作<br>    内存和磁盘自动缓存<br><a href="http://www.cnblogs.com/puff/p/5124997.html" target="_blank" rel="external">介绍</a><br><a href="http://www.cnblogs.com/sihaixuan/p/4137304.html" target="_blank" rel="external">示例1</a><br><a href="http://www.jianshu.com/p/9b93737bfa88" target="_blank" rel="external">示例2</a></p>
+<h4 id="Glide_3A__u63D0_u4F9B__u591A_u5A92_u4F53_u6587_u4EF6_u7684_u538B_u7F29_2C_u5185_u5B58_u548C_u78C1_u76D8_u7F13_u5B58_2C__u8D44_u6E90_u6C60_u7684_u63A5_u53E3_u3002"><a href="#Glide_3A__u63D0_u4F9B__u591A_u5A92_u4F53_u6587_u4EF6_u7684_u538B_u7F29_2C_u5185_u5B58_u548C_u78C1_u76D8_u7F13_u5B58_2C__u8D44_u6E90_u6C60_u7684_u63A5_u53E3_u3002" class="headerlink" title="Glide: 提供 多媒体文件的压缩,内存和磁盘缓存, 资源池的接口。"></a>Glide: 提供 多媒体文件的压缩,内存和磁盘缓存, 资源池的接口。</h4><p><a href="https://github.com/bumptech/glide" target="_blank" rel="external">Github</a><br>它可以最大性能地在 Android 设备上读取、解码、显示图片和视频。Glide 可以将远程的图片、视频、动画图片等缓存在设备本地便于提高用户浏览图片的流畅体验。<br><a href="http://www.cnblogs.com/zhaoyanjun/p/5404162.html" target="_blank" rel="external">示例</a><br>特点：<br>    GIF 动画的解码<br>    本地视频剧照的解码<br>    支持缩略图<br>    Activity 生命周期的集成<br>    转码的支持<br>    动画的支持<br>    OkHttp 和 Volley 的支持<br> 优点：<br>    图片缓存-&gt;媒体缓存<br>Glide 不仅是一个图片缓存，它支持 Gif、WebP、缩略图。甚至是 Video，所以更该当做一个媒体缓存。支持优先级处理与 Activity/Fragment 生命周期一致，支持 trimMemory<br>Glide 对每个 context 都保持一个 RequestManager，通过 FragmentTransaction 保持与 Activity/Fragment 生命周期一致，并且有对应的 trimMemory 接口实现可供调用支持 okhttp、Volley<br>Glide 默认通过 UrlConnection 获取数据，可以配合 okhttp 或是 Volley 使用。实际 ImageLoader、Picasso 也都支持 okhttp、Volley。内存友好.<br>① Glide 的内存缓存有个 active 的设计<br>从内存缓存中取数据时，不像一般的实现用 get，而是用 remove，再将这个缓存数据放到一个 value 为软引用的 activeResources map 中，并计数引用数，在图片加载完成后进行判断，如果引用计数为空则回收掉。<br>② 内存缓存更小图片<br>Glide 以 url、view_width、view_height、屏幕的分辨率等做为联合 key，将处理后的图片缓存在内存缓存中，而不是原始图片以节省大小<br>④ 图片默认使用默认 RGB_565 而不是 ARGB_888<br>虽然清晰度差些，但图片更小，也可配置到 ARGB_888。<br>Picasso所能实现的功能，Glide都能做，无非是所需的设置不同。但是Picasso体积比起Glide小太多如果项目中网络请求本身用的就是okhttp或者retrofit(本质还是okhttp)，那么建议用Picasso，体积会小很多(Square全家桶的干活)。Glide的好处是大型的图片流，比如gif、Video，如果你们是做美拍、爱拍这种视频类应用，建议使用。<br>Fresco在5.0以下的内存优化非常好，代价就是体积也非常的大，按体积算Fresco&gt;Glide&gt;Picasso<br>不过在使用起来也有些不便（小建议：他只能用内置的一个ImageView来实现这些功能，用起来比较麻烦，我们通常是根据Fresco自己改改，直接使用他的Bitmap层）<br><strong>推荐使用</strong></p>
+<h4 id="UniversalImageLoader"><a href="#UniversalImageLoader" class="headerlink" title="UniversalImageLoader"></a>UniversalImageLoader</h4><p><a href="http://www.cnblogs.com/lcw/p/3597574.html" target="_blank" rel="external">示例1</a><br><a href="http://www.cnblogs.com/avenwu/archive/2013/05/03/3058468.html" target="_blank" rel="external">示例2</a><br><a href="https://github.com/nostra13/Android-Universal-Image-Loader" target="_blank" rel="external">Github</a><br><a href="http://www.cnblogs.com/shaoke123/p/4685757.html" target="_blank" rel="external">解析1</a><br><a href="http://blog.csdn.net/xiaanming/article/details/26810303/" target="_blank" rel="external">示例3</a><br><a href="http://blog.csdn.net/vipzjyno1/article/details/23206387" target="_blank" rel="external">解析2</a><br><a href="http://www.mincoder.com/article/3800.shtml" target="_blank" rel="external">注意事项</a><br>    支持多线程图片加载<br>    提供丰富的细节配置，比如线程池大小，HTPP请求项，内存和磁盘缓存，图片显示时的参数配置等等；<br>    提供双缓存<br>    支持加载过程的监听；<br>    提供图片的个性化显示配置接口；<br>    Widget支持(这个，个人觉得没必要写进来，不过尊重原文)</p>
+<h4 id="Fresco"><a href="#Fresco" class="headerlink" title="Fresco"></a>Fresco</h4><p><a href="https://github.com/facebook/fresco" target="_blank" rel="external">Github</a><br><a href="http://www.fresco-cn.org/" target="_blank" rel="external">中文文档</a><br>•    在adapter中回收和取消当前的下载；<br>•    使用最少的内存完成复杂的图形转换操作；<br>•    图形转换操作，如变换大小，旋转等，提供了接口来让用户可以自定义转换操作；<br>•    加载载网络或本地资源；<br>•    可以转换为自己需要的request（Square公司开源的另一个网络支持库：retrofit支持转化json，protocol buffers）.<br>•    最大的优势在于5.0以下(最低2.3)的bitmap加载。在5.0以下系统，Fresco将图片放到一个特别的内存区域(Ashmem区)。当然，在图片不显示的时候，占用的内存会自动被释放。这会使得APP更加流畅，减少因图片内存占用而引发的OOM。为什么说是5.0以下，因为在5.0以后系统默认就是存储在Ashmem区了。<br>•    <a href="http://www.jianshu.com/p/ec4961133192" target="_blank" rel="external">详解1</a><br>•    <a href="http://www.jianshu.com/p/66e7fc907610" target="_blank" rel="external">详解2</a><br><a href="https://github.com/kaedea/fresco-sample-usage/blob/master/doc/readme-cn.md" target="_blank" rel="external">示例1</a><br><a href="http://www.cnblogs.com/wingyip/p/4508635.html" target="_blank" rel="external">详细解释</a></p>
+<h4 id="u5404_u7C7B_u56FE_u7247_u52A0_u8F7D_u5E93_u7684_u6BD4_u8F83_uFF1A"><a href="#u5404_u7C7B_u56FE_u7247_u52A0_u8F7D_u5E93_u7684_u6BD4_u8F83_uFF1A" class="headerlink" title="各类图片加载库的比较："></a>各类图片加载库的比较：</h4><p><a href="http://www.jianshu.com/p/48311f567969" target="_blank" rel="external">1</a><br><a href="http://www.trinea.cn/android/android-image-cache-compare/" target="_blank" rel="external">Picasso glide fresco的不同</a><br><a href="http://www.jianshu.com/p/9b93737bfa88" target="_blank" rel="external">2</a><br><a href="http://stackoverflow.com/questions/29363321/picasso-v-s-imageloader-v-s-fresco-vs-glide" target="_blank" rel="external">下图为四种图片加载库的优劣</a></p>
 </blockquote>
-<h3 id="u8FD4_u56DE_u6808"><a href="#u8FD4_u56DE_u6808" class="headerlink" title="返回栈"></a>返回栈</h3><p>使用任务栈来管理活动，当back键或finish()方法销毁一个活动时，处于栈顶的栈会出栈。前一个活动会处于栈顶。系统总会显示在栈顶的活动。</p>
-<h4 id="u6D3B_u52A8_u72B6_u6001"><a href="#u6D3B_u52A8_u72B6_u6001" class="headerlink" title="活动状态"></a>活动状态</h4><ul>
-<li>运行状态：即在栈顶的活动。</li>
-<li>暂停状态：一个活动不再处于栈顶，但可见时，活动进入暂停状态。（类似模态对话框，即一个小activity是当前活动，但不能完全覆盖背景activity,背景activity依旧可见。这样背景activity就进入暂停状态。）</li>
-<li>停止状态：一个活动不是在栈顶位置，而且完全不可见，其进入停止状态。当内存非常紧缺的时候，这些活动会被回收，需要非常注意其可靠性。</li>
-<li>销毁状态：从返回栈中出栈后，该活动就成为了销毁状态。</li>
-</ul>
-<h3 id="u751F_u547D_u5468_u671F"><a href="#u751F_u547D_u5468_u671F" class="headerlink" title="生命周期"></a>生命周期</h3><ul>
-<li>onCreate():  在活动第一次创建的时候被调用，完成一些数据的初始化工作。</li>
-<li>OnStart():   在活动由不可见变为可见的时候调用。</li>
-<li>OnResume():  活动准备好与用户交互时调用，活动一定处于栈顶，而且为运行状态。</li>
-<li>OnPause():   在准备启动或恢复另一个活动时调用，消耗时间要尽量少，以免影响另一个活动的运行。</li>
-<li>OnStop():    活动完全不可见时调用，与OnPause()区别在于如果启动的一个新活动是对话框式的活动，则执行OnPause()而非OnStop();</li>
-<li>OnDestroy(): 活动被销毁之前调用，调用之后，活动被销毁。</li>
-<li>OnRestart(): 由停止变为可运行状态前调用。</li>
-<li>OnCreate()&lt;—–&gt;OnDestory():完整的生命周期</li>
-<li>OnStart()&lt;———&gt;OnStop():可见生存周期</li>
-<li>OnResume()&lt;——-&gt;OnPause():前台生存周期，活动总是在运行状态。<br><img src="http://ww2.sinaimg.cn/mw690/006lPiqbjw1f38w1sk7onj30f50jr40c.jpg" alt="经典示意图"><br>在这三种生命周期的基础上衍生出来三种执行顺序：</li>
-<li>执行顺序:杀死进程/新建-&gt;活动  onCreate()–&gt;onStart()–&gt;OnResume()–&gt;用户交互–&gt;OnPause()–&gt;OnStop()–&gt;OnDestory()–&gt;OnCreate();</li>
-<li>执行顺序:活动可见-&gt;返回上一个活动  OnResume()–&gt;OnPause()–&gt;OnResume();</li>
-<li>执行顺序：活动被切换–&gt;重新切换回来成为当前活动 onStart()–&gt;OnResume()–&gt;OnPause()–&gt;onStop()–&gt;onRestart()–OnStart();<br><strong>可以看出，activity执行时所操作的方法都是成对出现的，即有开始，就要有结束。</strong></li>
-<li>执行示例1：点击A活动来到B活动，B全部遮挡住A，执行顺序为：A:OnPause()-&gt;B:OnCreate()-&gt;B:OnStart()-&gt;B:OnResume()-&gt;A:onStop();单击back键后的顺序：B:Onpause()-&gt;A:OnRestart()-&gt;A:Onstart()-&gt;A:OnResume()-&gt;B:OnStop()-&gt;B:OnDestroy().</li>
-</ul>
-<h4 id="u5E38_u64CD_u4F5C_u7684_u51E0_u4E2A_u6D3B_u52A8_u65F6_u6267_u884C_u7684_u987A_u5E8F"><a href="#u5E38_u64CD_u4F5C_u7684_u51E0_u4E2A_u6D3B_u52A8_u65F6_u6267_u884C_u7684_u987A_u5E8F" class="headerlink" title="常操作的几个活动时执行的顺序"></a>常操作的几个活动时执行的顺序</h4><ul>
-<li>启动Activity:onCreate–&gt;OnStart()–&gt;OnResume()</li>
-<li>跳转到其他Activity/home键返回到主屏幕：OnSaveInstanceState()–&gt;OnPause()–&gt;onStop();这也是home键和back键不同的地方，activity并没有被销毁。在数据重置方面，可以使用savedInstanceState来获取onSaveInstanceState()中已经保留的值。</li>
-<li>跳转回来：OnRestart()–&gt;OnStart()–&gt;OnResume();</li>
-<li>BACK键：OnPause()–&gt;onStop()–&gt;onDestory()如果想在按下back键后，实现home键的效果，即活动并非结束重新启动，而是保留在当前的activity，需要重写Back键的回调函数 @Override onBackPressed(){}；然后有两种方法：1.替换成Home键的效果。{Intent.CATEGORY_HOME}2.调用activity提供的方法：moveTaskToBack(true);</li>
-<li>旋转屏幕：将会先保存数据，然后销毁当前的activity,在重新生成一个，并将其保存的数据重置回来，执行顺序如下。 </li>
-<li>OnSaveInstanceState()–&gt;Onpause()–&gt;OnStop()–&gt;OnDestory()–&gt;OnCreate()–&gt;OnStart()–&gt;OnRestoreInstanceState()–OnResume();</li>
-</ul>
-<h3 id="u8C03_u7528_u65B9_u6CD5"><a href="#u8C03_u7528_u65B9_u6CD5" class="headerlink" title="调用方法"></a>调用方法</h3><ul>
-<li>activity.finish():将activity从Activity栈中移除，并调用activity的onDestory()函数。</li>
-<li>startActivityForResult/OnActivityResult/setResult:获取返回值的调用activity方法</li>
-<li>startActivity(intent):开启一个新的activity,将其入栈。</li>
-<li>所有的activity均需要在Androidmanifest.xml中注册</li>
-<li>自定义的activity类均需要继承activity类。<blockquote>
-<p><a href="http://www.cnblogs.com/bastard/archive/2012/04/07/2436262.html" target="_blank" rel="external">Activity启动和创建过程–只需要了解</a> <a href="http://www.cnblogs.com/JohnTsai/p/4051843.html" target="_blank" rel="external">Activity经典注释</a> <a href="http://www.cnblogs.com/jasoncc/archive/2011/07/21/2113314.html" target="_blank" rel="external">Activity生命周期2</a> <a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2013/0724/1481.html" target="_blank" rel="external">Activity之间传输数据的几种方式</a> <a href="http://blog.csdn.net/luoshengyang/article/details/6689748" target="_blank" rel="external">Activity启动源代码</a> <a href="http://www.cnblogs.com/meizixiong/p/3170591.html" target="_blank" rel="external">Activity四种启动方式–下班了，没看</a> <a href="http://www.cnblogs.com/EX32/p/4623764.html" target="_blank" rel="external">Activity四种启动方式—同上</a></p>
-</blockquote>
-</li>
-</ul>
 </span>
       
     </div>
@@ -340,17 +302,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/09/2016-4-9/" rel="next" title="Android开发的基础知识总结1">
-                <i class="fa fa-chevron-left"></i> Android开发的基础知识总结1
+              <a href="/2016/06/27/2016-6-27/" rel="next" title="html标签示例上">
+                <i class="fa fa-chevron-left"></i> html标签示例上
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/29/2016-4-29/" rel="prev" title="北京遇上西雅图2">
-                北京遇上西雅图2 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -377,8 +335,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/04/25/2016-4-16/"
-           data-title="Android开发的基础知识总结2" data-url="http://liuxuanhua.cn/2016/04/25/2016-4-16/">
+      <div class="ds-thread" data-thread-key="2016/08/08/2016-8-8 /"
+           data-title="android的开源库（一）" data-url="http://liuxuanhua.cn/2016/08/08/2016-8-8 /">
       </div>
     
   </div>
@@ -475,7 +433,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u8FD4_u56DE_u6808"><span class="nav-number">1.</span> <span class="nav-text">返回栈</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u6D3B_u52A8_u72B6_u6001"><span class="nav-number">1.1.</span> <span class="nav-text">活动状态</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u751F_u547D_u5468_u671F"><span class="nav-number">2.</span> <span class="nav-text">生命周期</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u5E38_u64CD_u4F5C_u7684_u51E0_u4E2A_u6D3B_u52A8_u65F6_u6267_u884C_u7684_u987A_u5E8F"><span class="nav-number">2.1.</span> <span class="nav-text">常操作的几个活动时执行的顺序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8C03_u7528_u65B9_u6CD5"><span class="nav-number">3.</span> <span class="nav-text">调用方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u7F51_u7EDC_u901A_u4FE1_u534F_u8BAE_uFF1A"><span class="nav-number">1.</span> <span class="nav-text">网络通信协议：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#android-async-http_u6846_u67B6"><span class="nav-number">1.1.</span> <span class="nav-text">android-async-http框架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Volley"><span class="nav-number">1.2.</span> <span class="nav-text">Volley</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#OkHttp"><span class="nav-number">1.3.</span> <span class="nav-text">OkHttp</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#retrofit"><span class="nav-number">1.4.</span> <span class="nav-text">retrofit</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Robospice"><span class="nav-number">1.5.</span> <span class="nav-text">Robospice</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u56FE_u7247_u7F13_u5B58_u5E93"><span class="nav-number">2.</span> <span class="nav-text">图片缓存库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Picasso_3A__u53EF_u4EE5_u5B9E_u73B0_u56FE_u7247_u4E0B_u8F7D_u548C_u7F13_u5B58_u529F_u80FD_u3002"><span class="nav-number">2.1.</span> <span class="nav-text">Picasso: 可以实现图片下载和缓存功能。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Glide_3A__u63D0_u4F9B__u591A_u5A92_u4F53_u6587_u4EF6_u7684_u538B_u7F29_2C_u5185_u5B58_u548C_u78C1_u76D8_u7F13_u5B58_2C__u8D44_u6E90_u6C60_u7684_u63A5_u53E3_u3002"><span class="nav-number">2.2.</span> <span class="nav-text">Glide: 提供 多媒体文件的压缩,内存和磁盘缓存, 资源池的接口。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UniversalImageLoader"><span class="nav-number">2.3.</span> <span class="nav-text">UniversalImageLoader</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Fresco"><span class="nav-number">2.4.</span> <span class="nav-text">Fresco</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5404_u7C7B_u56FE_u7247_u52A0_u8F7D_u5E93_u7684_u6BD4_u8F83_uFF1A"><span class="nav-number">2.5.</span> <span class="nav-text">各类图片加载库的比较：</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
