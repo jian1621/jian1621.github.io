@@ -51,16 +51,16 @@
 
 
 
-<meta name="description" content="介绍了android开发中所常引用的网络库和图片缓存库">
+<meta name="description" content="介绍了android开发中所常引用的网络库和图片缓存库，并附整理的所有安卓库的文件下载链接地址">
 <meta property="og:type" content="article">
-<meta property="og:title" content="android的开源库（一）">
+<meta property="og:title" content="android的开源库">
 <meta property="og:url" content="http://liuxuanhua.cn/2016/08/08/2016-8-8 /index.html">
 <meta property="og:site_name" content="L">
-<meta property="og:description" content="介绍了android开发中所常引用的网络库和图片缓存库">
-<meta property="og:updated_time" content="2016-08-08T12:52:47.309Z">
+<meta property="og:description" content="介绍了android开发中所常引用的网络库和图片缓存库，并附整理的所有安卓库的文件下载链接地址">
+<meta property="og:updated_time" content="2016-08-27T22:22:21.586Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="android的开源库（一）">
-<meta name="twitter:description" content="介绍了android开发中所常引用的网络库和图片缓存库">
+<meta name="twitter:title" content="android的开源库">
+<meta name="twitter:description" content="介绍了android开发中所常引用的网络库和图片缓存库，并附整理的所有安卓库的文件下载链接地址">
 
 
 
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title> android的开源库（一） | L </title>
+  <title> android的开源库 | L </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -222,7 +222,7 @@
             
             
               
-                android的开源库（一）
+                android的开源库
               
             
           </h1>
@@ -291,6 +291,7 @@
 <h4 id="UniversalImageLoader"><a href="#UniversalImageLoader" class="headerlink" title="UniversalImageLoader"></a>UniversalImageLoader</h4><p><a href="http://www.cnblogs.com/lcw/p/3597574.html" target="_blank" rel="external">示例1</a><br><a href="http://www.cnblogs.com/avenwu/archive/2013/05/03/3058468.html" target="_blank" rel="external">示例2</a><br><a href="https://github.com/nostra13/Android-Universal-Image-Loader" target="_blank" rel="external">Github</a><br><a href="http://www.cnblogs.com/shaoke123/p/4685757.html" target="_blank" rel="external">解析1</a><br><a href="http://blog.csdn.net/xiaanming/article/details/26810303/" target="_blank" rel="external">示例3</a><br><a href="http://blog.csdn.net/vipzjyno1/article/details/23206387" target="_blank" rel="external">解析2</a><br><a href="http://www.mincoder.com/article/3800.shtml" target="_blank" rel="external">注意事项</a><br>•    支持多线程图片加载<br>•    提供丰富的细节配置，比如线程池大小，HTPP请求项，内存和磁盘缓存，图片显示时的参数配置等等；<br>•    提供双缓存<br>•    支持加载过程的监听；<br>•    提供图片的个性化显示配置接口；<br>•    Widget支持(这个，个人觉得没必要写进来，不过尊重原文)</p>
 <h4 id="Fresco"><a href="#Fresco" class="headerlink" title="Fresco"></a>Fresco</h4><p><a href="https://github.com/facebook/fresco" target="_blank" rel="external">Github</a><br><a href="http://www.fresco-cn.org/" target="_blank" rel="external">中文文档</a><br>•    在adapter中回收和取消当前的下载；<br>•    使用最少的内存完成复杂的图形转换操作；<br>•    图形转换操作，如变换大小，旋转等，提供了接口来让用户可以自定义转换操作；<br>•    加载载网络或本地资源；<br>•    可以转换为自己需要的request（Square公司开源的另一个网络支持库：retrofit支持转化json，protocol buffers）.<br>•    最大的优势在于5.0以下(最低2.3)的bitmap加载。在5.0以下系统，Fresco将图片放到一个特别的内存区域(Ashmem区)。当然，在图片不显示的时候，占用的内存会自动被释放。这会使得APP更加流畅，减少因图片内存占用而引发的OOM。为什么说是5.0以下，因为在5.0以后系统默认就是存储在Ashmem区了。<br><a href="http://www.jianshu.com/p/ec4961133192" target="_blank" rel="external">详解1</a><br><a href="http://www.jianshu.com/p/66e7fc907610" target="_blank" rel="external">详解2</a><br><a href="https://github.com/kaedea/fresco-sample-usage/blob/master/doc/readme-cn.md" target="_blank" rel="external">示例1</a><br><a href="http://www.cnblogs.com/wingyip/p/4508635.html" target="_blank" rel="external">详细解释</a></p>
 <h4 id="u5404_u7C7B_u56FE_u7247_u52A0_u8F7D_u5E93_u7684_u6BD4_u8F83_uFF1A"><a href="#u5404_u7C7B_u56FE_u7247_u52A0_u8F7D_u5E93_u7684_u6BD4_u8F83_uFF1A" class="headerlink" title="各类图片加载库的比较："></a>各类图片加载库的比较：</h4><p><a href="http://www.jianshu.com/p/48311f567969" target="_blank" rel="external">比较1</a><br><a href="http://www.jianshu.com/p/9b93737bfa88" target="_blank" rel="external">比较22</a><br><a href="http://www.trinea.cn/android/android-image-cache-compare/" target="_blank" rel="external">Picasso glide fresco的不同</a><br><a href="http://stackoverflow.com/questions/29363321/picasso-v-s-imageloader-v-s-fresco-vs-glide" target="_blank" rel="external">下图为四种图片加载库的优劣</a></p>
+<p><a href="http://www.liuxuanhua.cn/test/document/android-open-sources.doc" target="_blank" rel="external">android开源库整理文件(全)下载</a></p>
 <h2 id="u6211_u603B_u7ED3_u4E86_u4E00_u4E0B_u6700_u8FD1_u4E00_u4E2A_u534A_u6708_uFF0C_u7ED3_u679C_u5982_u4E0B_uFF1A_u60F3_u5065_u8EAB_uFF0C_u4E70_u4E86_u745C_u4F3D_u57AB_uFF0C_u5374_u6CA1_u6709_u575A_u6301_u3002_u60F3_u505Aandroid_uFF0C_u4E0B_u4E86eclipse_uFF0C_u5F88_u4E45_u4E5F_u6CA1_u6253_u5F00_u8FC7_u3002_u4E00_u76F4_u5728_u5B66_u4E60bs_2C_u4F46_u8FD8_u662F_u4E00_u4E2A_u56DE_u8DEF_u90FD_u6253_u4E0D_u901A_u3002_u51C6_u59079_u6708_u4EFD_u7684_u7EAA_u5FF5_u89C6_u9891_uFF0C_u5374_u8FC7_u4E86_u4E00_u4E2A_u6708_u90FD_u6CA1_u6709_u52A8vegas-_u60F3_u7740_u54A8_u8BE2_u54E5_u54E5_u6237_u53E3_u7684_u4E8B_u60C5_uFF0C_u5374_u6CA1_u52A8_u8EAB_u3002_u60F3_u7740_u5E2E_u5927_u59D0_u54A8_u8BE2_u827A_u672F_u8001_u5E08_u7684_u4E8B_u60C5_uFF0C_u5374_u6CA1_u53BB_u95EE_u3002_u6C34_u7BA1_u4E00_u76F4_u574F_u6389_uFF0C_u4E24_u5468_u4E86_u8FD8_u6CA1_u6709_u7ED9_u623F_u4E1C_u6253_u7535_u8BDD_u3002_u6211_u8FD9_u662F_u600E_u4E48_u4E86_uFF0C_u6211_u8FD9_u662F_u75C5_u4E86_u5417_uFF1F_u6211_u4E00_u76F4_u5728_u60F3_u628A_u65F6_u95F4_u89C4_u5F8B_u8D77_u6765_uFF0C_u7761_u7720_u4FDD_u8BC1_u4E0B_u6765_uFF0C_u5374_u6B21_u6B21_u71AC_u591C_u3002_u6211_u60F3_u6211_u662F_u75C5_u4E86_uFF0C_u4E0D_u6210_u719F_u7684_u75C5_uFF0C_u4E0D_u81EA_u5236_u7684_u75C5_uFF0C_u771F_u662F_u53EF_u60B2_uFF0C_u6211_u50CF_u88AB_u81EA_u5DF1_u632B_u8D25_u4E86_uFF0C_u81EA_u5DF1_u53C8_u5632_u7B11_u81EA_u5DF1_uFF0C_u7136_u540E_u81EA_u5DF1_u5728_u6076_u6027_u5FAA_u73AF_u4E2D_u5815_u843D_u3002_u6240_u4EE5_u6211_u51B3_u5B9A_uFF0C_u780D_u6389_u592A_u591A_u7684_u60F3_u6CD5_uFF0C_u5148_u628A_u4E00_u4EF6_u4E8B_u505A_u597D_u3002_u5148_u628A_u5DE5_u4F5C_u7684_u4E8B_u60C5_u5B8C_u6210_u3002_u6211_u8981_u53BB_u597D_u597D_u94BB_u7814_u4E00_u4E0BBS_u67B6_u6784_uFF0C_u5B66_u4E60_u4E00_u4E0Bspring_u7684_u8BBE_u8BA1_u3002_u8BA1_u65F6_uFF1A2days"><a href="#u6211_u603B_u7ED3_u4E86_u4E00_u4E0B_u6700_u8FD1_u4E00_u4E2A_u534A_u6708_uFF0C_u7ED3_u679C_u5982_u4E0B_uFF1A_u60F3_u5065_u8EAB_uFF0C_u4E70_u4E86_u745C_u4F3D_u57AB_uFF0C_u5374_u6CA1_u6709_u575A_u6301_u3002_u60F3_u505Aandroid_uFF0C_u4E0B_u4E86eclipse_uFF0C_u5F88_u4E45_u4E5F_u6CA1_u6253_u5F00_u8FC7_u3002_u4E00_u76F4_u5728_u5B66_u4E60bs_2C_u4F46_u8FD8_u662F_u4E00_u4E2A_u56DE_u8DEF_u90FD_u6253_u4E0D_u901A_u3002_u51C6_u59079_u6708_u4EFD_u7684_u7EAA_u5FF5_u89C6_u9891_uFF0C_u5374_u8FC7_u4E86_u4E00_u4E2A_u6708_u90FD_u6CA1_u6709_u52A8vegas-_u60F3_u7740_u54A8_u8BE2_u54E5_u54E5_u6237_u53E3_u7684_u4E8B_u60C5_uFF0C_u5374_u6CA1_u52A8_u8EAB_u3002_u60F3_u7740_u5E2E_u5927_u59D0_u54A8_u8BE2_u827A_u672F_u8001_u5E08_u7684_u4E8B_u60C5_uFF0C_u5374_u6CA1_u53BB_u95EE_u3002_u6C34_u7BA1_u4E00_u76F4_u574F_u6389_uFF0C_u4E24_u5468_u4E86_u8FD8_u6CA1_u6709_u7ED9_u623F_u4E1C_u6253_u7535_u8BDD_u3002_u6211_u8FD9_u662F_u600E_u4E48_u4E86_uFF0C_u6211_u8FD9_u662F_u75C5_u4E86_u5417_uFF1F_u6211_u4E00_u76F4_u5728_u60F3_u628A_u65F6_u95F4_u89C4_u5F8B_u8D77_u6765_uFF0C_u7761_u7720_u4FDD_u8BC1_u4E0B_u6765_uFF0C_u5374_u6B21_u6B21_u71AC_u591C_u3002_u6211_u60F3_u6211_u662F_u75C5_u4E86_uFF0C_u4E0D_u6210_u719F_u7684_u75C5_uFF0C_u4E0D_u81EA_u5236_u7684_u75C5_uFF0C_u771F_u662F_u53EF_u60B2_uFF0C_u6211_u50CF_u88AB_u81EA_u5DF1_u632B_u8D25_u4E86_uFF0C_u81EA_u5DF1_u53C8_u5632_u7B11_u81EA_u5DF1_uFF0C_u7136_u540E_u81EA_u5DF1_u5728_u6076_u6027_u5FAA_u73AF_u4E2D_u5815_u843D_u3002_u6240_u4EE5_u6211_u51B3_u5B9A_uFF0C_u780D_u6389_u592A_u591A_u7684_u60F3_u6CD5_uFF0C_u5148_u628A_u4E00_u4EF6_u4E8B_u505A_u597D_u3002_u5148_u628A_u5DE5_u4F5C_u7684_u4E8B_u60C5_u5B8C_u6210_u3002_u6211_u8981_u53BB_u597D_u597D_u94BB_u7814_u4E00_u4E0BBS_u67B6_u6784_uFF0C_u5B66_u4E60_u4E00_u4E0Bspring_u7684_u8BBE_u8BA1_u3002_u8BA1_u65F6_uFF1A2days" class="headerlink" title="我总结了一下最近一个半月，结果如下：想健身，买了瑜伽垫，却没有坚持。想做android，下了eclipse，很久也没打开过。一直在学习bs,但还是一个回路都打不通。准备9月份的纪念视频，却过了一个月都没有动vegas.想着咨询哥哥户口的事情，却没动身。想着帮大姐咨询艺术老师的事情，却没去问。水管一直坏掉，两周了还没有给房东打电话。我这是怎么了，我这是病了吗？我一直在想把时间规律起来，睡眠保证下来，却次次熬夜。我想我是病了，不成熟的病，不自制的病，真是可悲，我像被自己挫败了，自己又嘲笑自己，然后自己在恶性循环中堕落。所以我决定，砍掉太多的想法，先把一件事做好。先把工作的事情完成。我要去好好钻研一下BS架构，学习一下spring的设计。计时：2days."></a>我总结了一下最近一个半月，结果如下：想健身，买了瑜伽垫，却没有坚持。想做android，下了eclipse，很久也没打开过。一直在学习bs,但还是一个回路都打不通。准备9月份的纪念视频，却过了一个月都没有动vegas.想着咨询哥哥户口的事情，却没动身。想着帮大姐咨询艺术老师的事情，却没去问。水管一直坏掉，两周了还没有给房东打电话。我这是怎么了，我这是病了吗？我一直在想把时间规律起来，睡眠保证下来，却次次熬夜。我想我是病了，不成熟的病，不自制的病，真是可悲，我像被自己挫败了，自己又嘲笑自己，然后自己在恶性循环中堕落。所以我决定，砍掉太多的想法，先把一件事做好。先把工作的事情完成。我要去好好钻研一下BS架构，学习一下spring的设计。计时：2days.</h2></span>
       
     </div>
@@ -340,7 +341,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/08/08/2016-8-8 /"
-           data-title="android的开源库（一）" data-url="http://liuxuanhua.cn/2016/08/08/2016-8-8 /">
+           data-title="android的开源库" data-url="http://liuxuanhua.cn/2016/08/08/2016-8-8 /">
       </div>
     
   </div>
