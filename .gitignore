@@ -1,0 +1,15 @@
+node_modules/
+**/*.log
+
+# Editor directoriesnode_modules/
+                    #**/*.log
+                    #
+                    ## Editor directories and files
+                    #.idea
+                    #.project
+                    #.settings/**
+                    #/docs/.vitepress/ and files
+.idea
+.project
+.settings/**
+/docs/.vitepress/
